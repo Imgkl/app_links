@@ -72,7 +72,7 @@ public final class SwiftAppLinksPlugin: NSObject, FlutterPlugin, FlutterStreamHa
       if let url = userActivity.webpageURL {
         handleLink(url: url)
       }
-      return false
+      return true
     default: return false
     }
   }
